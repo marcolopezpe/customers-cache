@@ -1,0 +1,21 @@
+quarkus:
+  rest-client:
+    customer-api:
+      url: http://localhost:4200
+      connect-timeout: 15000
+      read-timeout: 15000
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: 123456789
+    jdbc:
+      url: jdbc:postgresql://localhost:5433/db_customers_v1
+  hibernate-orm:
+    database:
+      generation: validate
+  redisson:
+    single-server-config:
+      address: redis://localhost:6379
+      username: default
+      password: redis123a
+      database: 0

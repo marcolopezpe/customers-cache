@@ -1,0 +1,60 @@
+{
+  "info": {
+    "name": "API Customers Cache v1",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8080/clientes?email=jorge.herrera@example.com",
+          "protocol": "http",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "clientes"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "jorge.herrera@example.com"
+            }
+          ],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Mock Server By Email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "localhost:4200/customers?email=ana.garcia@example.com",
+          "protocol": "",
+          "host": [
+            "localhost:4200"
+          ],
+          "path": [
+            "customers?email=ana.garcia@example.com"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ana.garcia@example.com"
+            }
+          ],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": []
+}
